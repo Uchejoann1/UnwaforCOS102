@@ -1,0 +1,23 @@
+FLOWCHART
+
+A for simple interest
+1. start
+2. input P,R,T
+3. calculate simple interest(SI)=(P*R*T)/100
+4. calculate amount(A) = P + SI
+5. print A
+6. stop
+
+B for compound interest
+1. start
+2. Input P,R,T,n
+3. calculate compound interest (CI)=  principal * (1 + rate/n)**(n*time)
+4. print CI
+5. stop
+
+C for annuity plan
+1. start
+2. input PMT , T, R,n
+3. calculate annuity plan amount = PMT * ((1 + rate/n)**(n*time) - 1) / (rate/n) 
+4. print amount 
+5. stop
