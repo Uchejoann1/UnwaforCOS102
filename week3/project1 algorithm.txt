@@ -1,0 +1,39 @@
+Algorithm: Print Data in Tabular Format
+
+•	START
+•	Input
+- data: a 2D list containing the data, where each sublist represents a row
+
+Output
+- A tabular representation of the data, printed to the console
+
+Steps
+1. Print Header
+    - Access the first sub-list in data (column headers)
+    - Join the column headers into a single string, separated by |
+    - Print the formatted string
+2. Print Separator
+    - Print a separator line consisting of 40 hyphens
+3. Print Data Rows
+    - Iterate over each sublist in data, starting from the second sublist (index 1)
+    - For each sublist, print a formatted string containing the values, separated by |
+    - Use specific widths for each value to align the columns
+•	STOP
+
+
+
+Pseudocode
+
+•	INPUT data
+•	PRINT_HEADER()
+  headers = data[0]
+  formattedHeaders = JOIN(headers, " | ")
+  PRINT(formattedHeaders)
+•	PRINT_SEPARATOR()
+  PRINT("-" * 40)
+•	PRINT_DATA_ROWS()
+  FOR EACH row IN data, STARTING FROM INDEX 1
+    formattedRow = ""
+    FOR EACH value IN row
+      formattedRow += VALUE + " | "
+    PRINT(formattedRow)

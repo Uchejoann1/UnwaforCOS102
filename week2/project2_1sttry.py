@@ -1,3 +1,6 @@
+Here's the updated code with the quartic equation solver implemented:
+
+
 import math
 
 def Cubic():
@@ -94,5 +97,3 @@ if Z == 1:
 elif Z == 2:
     Quartic()
 elif Z == 3:
-    Cubic()
-else: print("That is not a valid input")
