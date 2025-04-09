@@ -1,0 +1,52 @@
+1. 
+Pseudocode
+Store Checkout
+1. INITIALIZE
+    - Set subtotal to 0
+    - Set taxRate to 0.08 (8% tax rate)
+    - Set paymentMethod to null
+2. SCAN ITEMS
+    - For each item in the shopping cart
+        - Add item price to subtotal
+3. CALCULATE TAX
+    - Calculate tax by multiplying subtotal by taxRate
+4. CALCULATE TOTAL
+    - Calculate total by adding subtotal and tax
+5. CHOOSE PAYMENT METHOD
+    - Prompt customer to choose payment method (cash, credit/debit card, etc.)
+    - Set paymentMethod to chosen method
+6. PROCESS PAYMENT
+    - If paymentMethod is cash
+        - Prompt customer to insert cash
+        - Verify cash amount
+    - Else if paymentMethod is credit/debit card
+        - Prompt customer to swipe card
+        - Verify card information
+7. PRINT RECEIPT
+    - Print receipt with transaction details (items, subtotal, tax, total, payment method)
+8. END TRANSACTION
+
+
+
+3. Algorithm: Swap Ages
+
+START
+Input
+- name1: the first person's name
+- age1: the first person's age
+- name2: the second person's name
+- age2: the second person's age
+
+Output
+- The ages of the two individuals are swapped
+STOP
+
+Steps
+1.START
+2. INPUT: Take name1, age1, name2, and age2 as input.
+3. SWAP AGES: Swap the values of age1 and age2.
+    - Store the value of age1 in a temporary variable temp.
+    - Assign the value of age2 to age1.
+    - Assign the value of temp to age2.
+4. OUTPUT: Print the updated ages for name1 and name2.
+5. STOP

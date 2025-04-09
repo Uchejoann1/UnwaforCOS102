@@ -1,7 +1,5 @@
-Here's the updated code with the quartic equation solver implemented:
-
-
 import math
+import cmath
 
 def Cubic():
     A = float(input("Enter your first term: "))
@@ -55,10 +53,10 @@ def Quartic():
     T = Q / (2*S) + S
     
     # Calculate the roots
-    root1 = -b/4 + (T + math.sqrt(T**2 - 4*P)) / 2
-    root2 = -b/4 + (T - math.sqrt(T**2 - 4*P)) / 2
-    root3 = -b/4 + (-T + math.sqrt(T**2 - 4*P)) / 2
-    root4 = -b/4 + (-T - math.sqrt(T**2 - 4*P)) / 2
+    root1 = -b/4 + (T + cmath.sqrt(T**2 - 4*P)) / 2
+    root2 = -b/4 + (T - cmath.sqrt(T**2 - 4*P)) / 2
+    root3 = -b/4 + (-T + cmath.sqrt(T**2 - 4*P)) / 2
+    root4 = -b/4 + (-T - cmath.sqrt(T**2 - 4*P)) / 2
     
     print("Four roots: ", root1, root2, root3, root4)
 
@@ -97,3 +95,5 @@ if Z == 1:
 elif Z == 2:
     Quartic()
 elif Z == 3:
+    Cubic()
+else: print("That is not a valid input")
