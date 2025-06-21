@@ -32,5 +32,3 @@ class Employee:
     
 
 name = Employee(input("Enter your name: ") ) 
-
-print(name.employees())
