@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox as msgbox
 
 #handling button click event
 def button_click():
@@ -9,17 +10,21 @@ def button_click():
     #ask user confirmation
     result = msgbox.askyesno("Confimation","Do you want to continue?")
 
-    #create the main window
-    root =  tk.TK()
-    root.title("Home Page")
-    root.geometry("300x100")
+#create the main window
+root =  tk.Tk()
+root.title("Home Page")
+root.geometry("300x100")
     
-    #add a label widget
-    label = tk.Label(root,text="Hello Friend\n")
-    label.pack()
+#add a label widget
+label = tk.Label(root,text="Hello Friend\n")
+label.pack()
+#add a button widget
+button = tk.Button(root,text="CLick Me!", command=button_click)
+button.pack()
+#styling the button
+button.config(bg="blue", fg="white", font=("Arial", 12))
 
-    #add a button widget
-    button = tk.Button(root,text="CLick Me!", command=button_click)
-    button.pack()
+#start the main event loop
+root.mainloop()
 
     

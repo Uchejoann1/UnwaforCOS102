@@ -32,3 +32,8 @@ class Employee:
     
 
 name = Employee(input("Enter your name: ") ) 
+if name.check_employee():
+    print(f"Welcome, {name}!")
+    print(name.take_attendance())
+    print(f"Your assigned task is: {name.assign_task()}")
+else: print(name.refuse_access())
